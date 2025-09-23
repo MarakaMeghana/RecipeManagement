@@ -1,0 +1,13 @@
+spring.application.name=RecipeBackend
+server.port=2038 
+spring.datasource.url=jdbc:mysql://localhost:3306/cookbook?useSSL=false&serverTimezone=UTC 
+spring.datasource.username=root 
+spring.datasource.password=Megha@22 
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.database-platform=org.hibernate.dialect.MySQL8Dialect
+spring.jpa.show-sql=true
+logging.level.org.hibernate.SQL=DEBUG
+logging.level.org.hibernate.type.descriptor.sql.BasicBinder=TRACE
+
+
