@@ -5,7 +5,7 @@
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  color-scheme: light dark;
+  color-scheme: light;
   color: #43281C;
   background-color: #F8F6F4;
 }
@@ -18,6 +18,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
   padding: 2rem 0;
+  background-color: #ffffff; /* page background */
 }
 
 /* Navbar */
@@ -51,7 +52,7 @@ body {
 
 /* Container */
 .container {
-  background-color: #EAD7BB;
+  background-color: #4FC3F7; /* Light Blue */
   padding: 1.5rem 2rem;
   border-radius: 12px;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
@@ -72,7 +73,7 @@ input, textarea {
   margin: 0.5rem 0;
   border-radius: 8px;
   border: 1px solid #D4A373;
-  background-color: #FDF9F3;
+  background-color: #fff;
   font-size: 1rem;
   color: #43281C;
 }
@@ -164,38 +165,4 @@ button.btn:hover {
   text-align: center;
   font-style: italic;
   color: #777;
-}
-
-/* Dark Mode */
-@media (prefers-color-scheme: dark) {
-  :root {
-    color: #F8F6F4;
-    background-color: #1A1A1A;
-  }
-
-  .container {
-    background-color: hsl(161, 82%, 49%);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
-  }
-
-  input, textarea {
-    background-color: hwb(60 86% 10%);
-    border: 1px solid #5A4E46;
-    color: #F8F6F4;
-  }
-
-  input:focus, textarea:focus {
-    border-color: #D4A373;
-    box-shadow: 0 0 0 3px rgba(212, 163, 115, 0.3);
-  }
-
-  .recipe-card {
-    background-color: #67b008;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-    color: #F8F6F4;
-  }
-  
-  .no-recipes {
-    color: #A0A0A0;
-  }
 }
